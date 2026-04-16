@@ -32,6 +32,9 @@ public class App {
                     Integer id2 = sc.nextInt();
                     deletar(id2);
                     break;
+                    case 5:
+                        filtrarPorNome();
+                        break; 
             }
         }
     }
@@ -100,8 +103,23 @@ public class App {
         }
         
         
-       
-          
+        
+        
+    }
+    public static void filtrarPorNome(){
+        Scanner sc = new Scanner(System.in);
+        String nome;
+        System.out.println("Digite o nome a ser filtrado: ");
+        nome = sc.nextLine();
+        for(Aluno individuo : alunos){
+            if(individuo.getNome().contains(nome)){
+                System.out.println("Nome: "+individuo.getNome());
+                System.out.println("turma: "+individuo.getTurma());
+                System.out.println("--------------------------------------");
+            }
 
-     }
+        } 
+
+
+    }
 }
