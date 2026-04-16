@@ -75,27 +75,27 @@ public class App {
         Integer opcao = sc.nextInt();
         if(opcao == 1){
             System.out.println("Digite o novo nome: ");
-            aluno.setnome(sc2.nextLine());
+            aluno.setNome(sc2.nextLine());
         }
         System.out.println("A idade do  aluno é: "
         +aluno.getIdade()+" digite 1 para editar:");
         opcao = sc.nextInt();
         if(opcao == 1){
-            System.out.println("digite a nova idade:")
+            System.out.println("digite a nova idade:");
             aluno.setIdade(sc.nextInt());
         }
              System.out.println(" curso do  aluno é: "
         +aluno.getCurso()+" digite 1 para editar:");
         opcao = sc.nextInt();
         if(opcao == 1){
-            System.out.println("digite o novo curso:")
+            System.out.println("digite o novo curso:");
             aluno.setCurso(sc2.nextLine());
         }
         System.out.println(" A turma do  aluno é: "
         +aluno.getTurma()+" digite 1 para editar:");
         opcao = sc.nextInt();
         if(opcao == 1){
-            System.out.println("digite a nova turma:")
+            System.out.println("digite a nova turma:");
             aluno.setTurma(sc2.nextLine());
         }
         
